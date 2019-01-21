@@ -1,0 +1,129 @@
+.header{
+  display: flex;
+  background-color: $bgColor;
+  align-items: center;
+  padding: 40px 0;
+  justify-content: space-around;
+  .logotype {
+    display: block;
+    max-width: 365px;
+    padding: 0 15px;
+    .logo {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      &_top-text {
+        @include text($Lato, $logoColor, 19px, 700);
+      }
+      &_middle-text {
+        @include text($Crimson, $logoColor, 35px, 400);
+        white-space: nowrap;
+      }
+      &_bottom-text {
+        @include text($Lato, $logoColor, 20px, 300);
+      }
+    }
+  }
+  .navbar{
+    width: 60%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    &_link{
+      @include text($Lato,$logoColor,21px,400);
+      &:hover{
+        color:$searchBoxColor;
+      }
+    }
+  }
+  .search-box{
+    position: relative;
+    padding: 0 15px;
+    &_input{
+      border: 1px solid $searchBoxColor;
+      height: 32px;
+      background: $bgColor;
+    }
+    &_btn{
+      border:none;
+      background: $bgColor;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 1px;
+      right: 17px;
+      cursor: pointer;
+    }
+  }
+}
+@media(max-width:1250px){
+    .header{
+      flex-wrap: wrap;
+      padding: 20px 0 ;
+    }
+  .header .logotype{
+    margin: 0 auto;
+  }
+  .header .navbar{
+    width: 84%;
+    padding: 15px 15px;
+  }
+}
+@media(max-width: 1174px) {
+  .header .navbar {
+    width: 83%;
+  }
+}
+@media(max-width: 1105px) {
+  .header .navbar {
+    width: 82%;
+  }
+}
+@media(max-width: 1045px) {
+  .header .navbar {
+    width: 81%;
+  }
+}
+@media(max-width: 992px){
+  .header .navbar {
+    display: none;
+  }
+  .header .logotype{
+    margin: 0;
+  }
+  .header .logotype .logo_top-text{
+    font-size: 16px;
+  }
+  .header .logotype .logo_middle-text{
+    font-size: 30px;
+  }
+  .header .logotype .logo_bottom-text{
+    font-size: 15px;
+  }
+  .header .search-box {width: 40%;}
+  input.search-box_input[type=text]{width: 100%;}
+  .burger {display: block;padding: 0 15px;}
+}
+@media(max-width: 629px){
+  .header .logotype{
+    order:-1;
+  }
+  .header .search-box{
+    width: 100%;
+  }
+  .burger {
+    order: -1;
+  }
+  .header .search-box{
+    margin:2% 0;
+  }
+}
+@media (max-width:375px){
+  .burger{
+    padding-left:0;
+  }
+  .header .logotype .logo_middle-text{
+    font-size: 25px;
+  }
+}

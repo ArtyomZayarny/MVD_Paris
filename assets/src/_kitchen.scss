@@ -1,0 +1,202 @@
+.kitchen {
+  &_title-box {
+
+    &_title {
+      @include text($Crimson, $logoColor, 36px, 400);
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  }
+  &_content {
+    position: relative;
+    height: 681px;
+    .article-wrap {
+       max-width: 96%;
+      .article {
+        display: flex;
+        width: 100%;
+
+        .left-side {
+          padding: 3%;
+          background: $bgColor;
+          width: 100%;
+          .article_title {
+            h4 {
+              @include text($Lato, $logoColor, 31px, 300);
+              padding-bottom: 3%;
+            }
+          }
+          .article_text {
+            p {
+              @include text($Crimson, $logoColor, 20px, 400);
+              padding-bottom: 3%;
+            }
+          }
+          .social_btn {
+            a {
+              color: #323232;
+              i {
+                font-size: 30px;
+              }
+              padding: 0 15px;
+            }
+          }
+        }
+        .right-side{
+          img{
+            margin-bottom: -0.5%;
+          }
+        }
+      }
+      .button-area {
+        position: relative;
+        .btn{
+          background: #000;
+          display: inline-block;
+          position: absolute;
+          right:0;
+          width: 28%;
+          text-align: center;
+          cursor: pointer;
+          &:hover{
+            background: #6f6c6c;
+          }
+          &_text{
+            display: block;
+            @include text($Crimson, $white, 30px);
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            padding: 3% 5%;
+          }
+        }
+      }
+    }
+    .rectangle {
+      width: 87%;
+      height: 83%;
+      background: $NewsColor;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+@media(max-width: 1424px){
+  .kitchen_content .article-wrap .article .left-side{
+    width: 92%;
+  }
+}
+@media(max-width: 1360px){
+  .kitchen_content .article-wrap .article .left-side{
+    width: 89%;
+  }
+}
+@media(max-width:1330px){
+  .kitchen_content .article-wrap .article .left-side .article_title h4{
+    font-size: 26px;
+  }
+  .kitchen_content .article-wrap .article .left-side .article_text p{
+    font-size: 18px;
+  }
+  .kitchen_content .article-wrap .article .left-side{
+    padding: 2%;
+  }
+}
+@media(max-width: 1280px){
+  .kitchen_content{
+    height: 610px;
+  }
+}
+@media(max-width: 1180px){
+  .kitchen_content .article-wrap{
+    max-width: 98%;
+  }
+}
+@media(max-width:1150px){
+  .kitchen_content .article-wrap .article .left-side {
+    padding: 2%;
+  }
+  .kitchen_content .article-wrap .article .left-side .article_title h4{
+    font-size: 24px;
+  }
+  .kitchen_content .article-wrap .article .left-side .article_text p{
+    font-size: 17px;
+  }
+}
+@media(max-width: 1082px){
+  .kitchen_content .article-wrap{
+    max-width: 94%;
+  }
+  .right-side {
+    order: -1;
+  }
+  .kitchen_content .article-wrap .article{
+    flex-direction: column;
+  }
+  .kitchen_content .article-wrap .article .left-side{
+    width: 100%;
+  }
+  .kitchen_content .article-wrap .article .left-side .article_title h4{
+    font-size: 31px;
+  }
+  .kitchen_content .article-wrap .article .left-side .article_text p{
+    font-size: 21px;
+  }
+  .kitchen_content{height: auto;}
+  .kitchen_content .rectangle{
+    height:100%;
+    bottom: -80px;
+  }
+  section.kitchen{
+    margin-bottom: 100px;
+  }
+}
+@media(max-width: 992px){
+  .kitchen_content .article-wrap .button-area .btn{
+    width: 387px;
+  }
+}
+@media(max-width: 768px){
+  .kitchen_content .article-wrap .article .left-side .article_title h4{
+    text-align: center;
+  }
+  .kitchen_content .article-wrap .article .left-side .article_text p{
+    font-size: 18px;
+  }
+  .kitchen_content .article-wrap .button-area .btn{
+    width: 100%;
+  }
+  .kitchen_content .article-wrap .button-area .btn_text{
+    font-size: 27px;
+  }
+}
+@media(max-width: 425px){
+  .kitchen_content .article-wrap .article .left-side .article_title h4{
+    font-size: 27px;
+  }
+  .kitchen_content .article-wrap{
+    max-width: 100%;
+  }
+  .kitchen_content .article-wrap .article .left-side{
+    padding: 0 15px;
+  }
+  .social_btn{
+    margin-bottom: 15px;
+  }
+  .kitchen_content .rectangle{
+    display:none;
+  }
+}
+@media(max-width: 320px){
+  .kitchen_content .article-wrap .article .left-side .article_text p{
+    font-size: 16px;
+  }
+  .kitchen_content .article-wrap .article .left-side .article_title h4{
+    padding: 14px 0;
+  }
+  .kitchen_content .article-wrap .article .left-side .article_text p{
+    padding-bottom: 7%;
+  }
+
+}

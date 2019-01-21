@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/dist/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+<header class="header">
+    <a class="logotype" href="/">
+        <div class="logo">
+            <p class="logo_top-text">MVD Paris</p>
+            <p class="logo_middle-text">Meubles Vintage Design</p>
+            <p class="logo_bottom-text">Achat - Vente - Location</p>
+        </div>
+    </a>
+    <nav class="navbar">
+        <a href="#" class="navbar_link">Mobilier</a>
+        <a href="#" class="navbar_link">Location</a>
+        <a href="#" class="navbar_link">Rachat</a>
+        <a href="#" class="navbar_link">Votre recherche</a>
+        <a href="#" class="navbar_link">Qui sommes-nous?</a>
+        <a href="#" class="navbar_link">Contact</a>
+    </nav>
+    <form class="search-box" action="">
+        <input class="search-box_input" type="text" placeholder="Search" name="search">
+        <button class="search-box_btn" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <div class="burger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+</header>
+<section class="front">
+    <div class="front-left">
+        <h1 class="front-left_title">Mobilier design et authentique</h1>
+    </div>
+    <div class="front-right">
+        <div class="slider">
+            <ul class="slider_dots">
+                <li onclick="showSlide(0)" class="dot active"><span></span></li>
+                <li onclick="showSlide(1)" class="dot"><span></span></li>
+                <li onclick="showSlide(2)" class="dot"><span></span></li>
+            </ul>
+
+            <a  class="slider_item active" href="#"><img src="assets/img/0.png" alt="slide_1"></a>
+
+        </div>
+    </div>
+    <div class="news-wrap">
+        <div class="news">
+            <div class="news_pic">
+                <div class="img">
+                    <img src="assets/img/light.png" alt="light">
+                </div>
+
+            </div>
+            <div class="news-content_wrap">
+                <div class="news-content">
+                    <h3 class="news-content_title">News</h3>
+                    <p class="news-content_desc">Lustre Sputnik métal chromé seventies</p>
+                    <span class="news-content_count">02
+                     <img class="right-arrow" src="assets/img/right_arrow.png" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="collections">
+    <div class="collections_title-box">
+        <h3 class="title">COLLECTIONS</h3>
+        <p class="sub-title">Vintage</p>
+    </div>
+    <div class="collections_content">
+        <div class="row">
+            <div class="collections_content_img">
+                <div class="text-holder">
+                    <h4>Chaises</h4>
+                    <span>Voir plus</span>
+                </div>
+                <img src="assets/img/vintag_chair.png" alt="chair">
+            </div>
+            <div class="collections_content_img collections_content_img-middle">
+                <div class="text-holder">
+                    <h4>Fauteuils</h4>
+                    <span>Voir plus</span>
+                </div>
+                <img class="sofa" src="assets/img/vinrage_sofa.png" alt="sofa">
+            </div>
+            <div class="collections_content_img">
+                <div class="text-holder">
+                    <h4>Tables</h4>
+                    <span>Voir plus</span>
+                </div>
+                <img src="assets/img/vintage_table.png" alt="table">
+            </div>
+        </div>
+        <div class="row">
+            <div class="collections_content_img">
+                <div class="text-holder">
+                    <h4>Luminaires</h4>
+                    <span>Voir plus</span>
+                </div>
+                <img src="assets/img/vintage_chandelier.png" alt="chandelier">
+            </div>
+            <div class="collections_content_img collections_content_img-middle">
+                <div class="text-holder">
+                    <h4>Rangement</h4>
+                    <span>Voir plus</span>
+                </div>
+                <img src="assets/img/vintage_rest_1.png" alt="rest">
+            </div>
+            <div class="collections_content_img">
+                <div class="text-holder">
+                    <h4>Décoration</h4>
+                    <span>Voir plus</span>
+                </div>
+                <img src="assets/img/vintage_rest_2.png" alt="decoration">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="kitchen">
+    <div class="kitchen_title-box">
+        <h3 class="kitchen_title-box_title">Qui sommes nous ?</h3>
+    </div>
+    <div class="kitchen_content">
+        <div class="kitchen_content_article">
+            <div class="article-wrap">
+                <div class="article">
+                    <div class="left-side">
+                        <div class="article_title">
+                            <h4>Achat - Vente - Location</h4>
+                        </div>
+                        <div class="article_text">
+                            <p>Tout notre mobilier Vintage et Design est visible sur RDV
+                                dans notre Show-Room rue Thiers 92100 Boulogne-Billancourt.
+                                En tant que professionnel nous certifions tout notre
+                                mobilier et nous livrons sur toute la France.
+                                Contactez nous, nous rachetons vos meubles design aux
+                                meilleurs prix et nous nous déplaçons gratuitement dans
+                                toute l'Île de France
+                                pour les expertiser</p>
+
+                            <p>MVD (Meubles Vintage Design) est spécialisé dans la vente de
+                                mobilier dessiné par les grands designers du 20éme siècle
+                                (Eames, Le Corbusier, Saarinen, Paulin, Van der Rohe,
+                                Bertoia, Panton, Wegner, Le Corbusier, Mategot, Jeanneret,
+                                Perriand…) et édité par les plus grandes maisons (Knoll,
+                                Cassina, Vitra, Artifort, Fritz Hansen, Herman Miller, Roche
+                                Bobois, cinna, , ligne Roset…)</p>
+                        </div>
+                        <div class="social_btn">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <img class="kitchen_img" src="assets/img/vintage_kitchen.png" alt="kitchen">
+                    </div>
+                </div>
+                <div class="button-area">
+                    <a class="btn"><span class="btn_text">VOIR PLUS</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="rectangle"></div>
+    </div>
+</section>
+<footer class="footer">
+    <a class="logotype" href="/">
+        <div class="logo">
+            <p class="logo_top-text">MVD Paris</p>
+            <p class="logo_middle-text">Meubles Vintage Design</p>
+            <p class="logo_bottom-text">Achat - Vente - Location</p>
+        </div>
+    </a>
+    <div class="right">
+        <nav class="navbar">
+            <a href="#" class="navbar_link">Mobilier</a>
+            <a href="#" class="navbar_link">Location</a>
+            <a href="#" class="navbar_link">Rachat</a>
+            <a href="#" class="navbar_link">Votre recherche</a>
+            <a href="#" class="navbar_link">Qui sommes-nous?</a>
+            <a href="#" class="navbar_link">Contact</a>
+        </nav>
+        <div class="contact">
+            <div class="phone">
+                <p>Rue Thiers 92100 Boulogne Billancourt</p>
+                <span>0769519904</span>
+            </div>
+            <div class="adress">
+                <p>Mentions légales</p>
+                <p>CGV</p>
+            </div>
+            <div class="social_btn">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/dist/sript.js"></script>
+</body>
+</html>
